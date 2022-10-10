@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMART Online Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,100;1,300&family=Lobster&family=Poppins&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+
+
+<body>
+  <div class="nvbar">
+    <div class="nav-logo col-2">
+      <img src="img/logo.jpg" alt="Logo">
+    </div>
+    <div class="nav-heading col-6">
+      <h1 class="animate-charcter">Welcome</h1>
+    </div>
+    <div class="nvbar-menu col-2.5">
+      <a href="#home">Home</a>
+      <a href="#product">Product</a>
+      <a href="#review">Review</a>
+      <a href="#Cntct">Contact</a>
+    </div>
+  </div>
+
+
+  <!-- Carousel Design -->
+  <div id="home" class="title-desc">Offers!!!</div>
+  <section class="container carousel-bg-color rounded rounded-3">
+    <div class="ms-">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item car-item active">
+            <div class="row offers rounded d-flex align-items-center">
+              <div class="col-lg-7 p-5">
+                <h1>Fashionable Bicycle</h1>
+                <p>Regular Price: 29,700</p>
+                <p class="dep">Got it on 35% discount!!! </p>
+                <h1 class="price">22,000 BDT</h1>
+                <button onclick="add(22000)" class="btn btn2">Buy Now>></button>
+              </div>
+              <div class="col-lg-5">
+                <img class="carimg" src="img/ca1.jpg" class="d-block w-100 p-4" alt="E-Bike1">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item car-item">
+            <div class="row offers rounded  d-flex align-items-center">
+              <div class="col-lg-7 p-5 ">
+                <h1>Fashionable Bicycle</h1>
+                <p>Regular Price: 22,100</p>
+                <p class="dep">Got it on 30% Discount!!!</p>
+                <h1 class="price">17,000 BDT</h1>
+                <button onclick="add(17000)" class="btn btn2">Buy Now >></button>
+              </div>
+              <div class="col-lg-5">
+                <img class="carimg" src="img/ca2.jpg" class="d-block w-100 p-4" alt="E-Bike2">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item car-item">
+            <div class="row offers rounded  d-flex align-items-center">
+              <div class="col-lg-7 p-5 ">
+                <h1>Fashionable Gear Bicycle</h1>
+                <p>Regular Price: 22,500</p>
+                <p class="dep">Got it on 25% Discount!!!</p>
+                <h1 class="price">18,0000 BDT</h1>
+                <button onclick="add(18000)" class="btn btn2">Buy Now >></button>
+              </div>
+              <div class="col-lg-5">
+                <img class="carimg" src="img/ca3.jpg" class="d-block w-100 p-4" alt="E-Bike3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Product Design -->
+  <div id="product" class="title-desc">Our Products</div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="row row-cols-1 row-cols-md-3 g-4 products col-9">
+          <div class="content">
+            <img src="img/c1.jpg">
+            <h3>Optimal G7 Bicycle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+            <h6>Tk 19,500</h6>
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <button onclick="add(19500)" class="addtocart">Add to Cart</button>
+          </div>
+          <div class="content">
+            <img src="img/c2.jpg">
+            <h3>Electric G5 Bicycle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+            <h6>Tk 53,500</h6>
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <button onclick="add(53500)" class="addtocart">Add to Cart</button>
+          </div>
+          <div class="content">
+            <img src="img/c3.jpg">
+            <h3>Folding S Bicycle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+            <h6>Tk 26,900</h6>
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <button onclick="add(26900)" class="addtocart">Add to Cart</button>
+          </div>
+          <div class="content">
+            <img src="img/c7.jpg">
+            <h3>Gorilla 9 Bicycle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+            <h6>Tk 115,000</h6>
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <button onclick="add(115000)" class="addtocart">Add to Cart</button>
+          </div>
+          <div class="content">
+            <img src="img/c5.jpg">
+            <h3>Dynamo Pro Bicycle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+            <h6>Tk 15,700</h6>
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <button onclick="add(15700)" class="addtocart">Add to Cart</button>
+          </div>
+          <div class="content">
+            <img src="img/c6.jpg">
+            <h3>Mini Victor Bicycle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+            <h6>Tk 11,000</h6>
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <button onclick="add(11000)" class="addtocart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="my-cart w-25 p-2 col-3 mt-5">
+          <h2 class="text-center"><i class="fa-sharp fa-solid fa-cart-shopping"> Your Cart</i></h2>
+          <hr>
+          <h3>Total Products: <span id="total-products">0</span></h3>
+          <h3>Price: <span id="price">0</span> BDT</h3>
+          <h3>Delivery Charge: <span id="delivery-charge">0</span> BDT</h3>
+          <hr>
+          <h3>Shipping Charge: <span id="shipping-charge">0</span> BDT</h3>
+          <h2>Total Price <span id="total">0</span> BDT</h2>
+          <h3>Tax (10%): <span id="tax">0</span> BDT</h3>
+          <hr>
+          <h2>Total Price with Tax: <br><span id="intotal">0</span> BDT</h2>
+          <button onclick="orderProducts()" class="btn btn-secondary ms-3">Place Order!</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Upcoming Products -->
+  <div class="title-desc">
+    Upcoming Products!!!
+  </div>
+  <section class="up-sec">
+    <div class="up-div">
+      <img class="up-img" src="img/l1.jpg" alt="upcoming product">
+      <h5>RGB Light</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odit.</p>
+    </div>
+    <div class="up-div">
+      <img class="up-img" src="img/l2.jpg" alt="upcoming product">
+      <h5>Light With Bell</h5>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, obcaecati!</p>
+    </div>
+    <div class="up-div">
+      <img class="up-img" src="img/kit.jpg" alt="upcoming product">
+      <h5>Bicycle Kit</h5>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quia.</p>
+    </div>
+  </section>
+
+
+  <!-- Customer Review -->
+  <div class="container text-white">
+    <section class="fdb" id="review">
+      <div class="section-title">
+        <h3>Customer Review</h3>
+        <hr class="hr-style">
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-interval="1000"
+            data-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item car-tm active">
+                <div class="jk ms-5">
+                  <div class="rev-img">
+                    <img src="img/cs1.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Habibul Bashar</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo consectetur quasi iure vitae
+                          atque sequi.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rev-img">
+                    <img src="img/cs2.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Tarek Masud</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, dolores?</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rev-img">
+                    <img src="img/cs3.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Tarek Masud</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, dolores?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item car-tm">
+                <div class="jk ms-5">
+                  <div class="rev-img">
+                    <img src="img/cs4.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Kaiser Ahmed</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, nisi. Beatae, quae et at
+                          exercitationem facilis molestias expedita?</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rev-img">
+                    <img src="img/cs5.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Raihan Siddiqui</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus adipisci quos
+                          aspernatur beatae odio tempore qui labore, expedita in.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rev-img">
+                    <img src="img/cs6.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Tarek Masud</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, dolores?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item car-tm">
+                <div class="jk ms-5">
+                  <div class="rev-img">
+                    <img src="img/cs7.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Labib Khan</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, perspiciatis laudantium
+                          voluptates assumenda minima, numquam totam inventore, laboriosam eos rerum veniam corrupti.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rev-img">
+                    <img src="img/cs8.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Atik Ullah</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim culpa similique facere
+                          distinctio sunt.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rev-img">
+                    <img src="img/cs9.jpg" alt="">
+                    <div class="r-box">
+                      <div class="r-title">
+                        <h1 class="">Tarek Masud</h1>
+                      </div>
+                      <div class="rev-p">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, dolores?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact -->
+  <div class="title-desc">
+    Contact with us
+  </div>
+  <div class="cnt" id="Cntct">
+    <div class="soc-icon">
+      <div class="icon-align">
+        <p><button class="btn-icon"><i class="fa-solid fa-phone"> <span> 01322684693</span></i></button></p>
+        <p><button class="btn-icon"><i class="fa-brands fa-whatsapp"> <span> 01856685830</span></i></button></p>
+        <p><button class="btn-icon"><i class="fa-solid fa-envelope"><span>
+                smartonline22@gmail.com</span></i></button></p>
+      </div>
+      <div>
+        <button class="btn-icon" onclick="window.open('https://www.facebook.com')" class="btn request-callback"><i
+            class="fa-brands fa-facebook"></i></button>
+        <button class="btn-icon" onclick="window.open('https://www.youtube.com')" class="btn request-callback"><i
+            class="fa-brands fa-youtube"></i></i></button>
+        <button class="btn-icon" onclick="window.open('https://www.linkedin.com')" class="btn request-callback"><i
+            class="fa-brands fa-linkedin"></i></button>
+        <button class="btn-icon" onclick="window.open('https://skype.com')" class="btn request-callback"><i
+            class="fa-brands fa-skype"></i></button>
+      </div>
+
+    </div>
+    <div class="contactbox">
+      <form action="">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <textarea name="message" rows="6" placeholder="Message"></textarea>
+        <button type="submit" class="btn1 btn2">Submit</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    Copyright @Developers, SMART Online Group Bangladesh, 2022
+  </footer>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>

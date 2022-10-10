@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#1f0241, rgb(48, 11, 11));
+}
+
+/* Navbar Design */
+a {
+    color: blanchedalmond;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nvbar {
+    background: linear-gradient(to right, #1f0241, rgb(48, 11, 11));
+    padding: 10px 10px;
+    gap: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.nvbar h1 {
+    font-family: 'Lobster', cursive;
+    color: rgb(205, 213, 255);
+    display: flex;
+    align-items: center;
+    margin: 90px;
+    margin-left: 50%;
+
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 5%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 50% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.nav-logo img {
+    height: 100px;
+    width: 100px;
+    margin-top: 60px;
+    border-radius: 50px;
+
+}
+
+.nvbar-menu {
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: end;
+    margin-top: 100px;
+
+}
+
+.nvbar-menu a {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px 0px;
+}
+
+.nvbar-menu a:hover {
+    color: black;
+    background: linear-gradient(rgb(56, 72, 145), rgb(74, 92, 97));
+
+}
+
+/*carousel design*/
+.carousel-bg-color {
+    margin-top: 150px;
+    background: linear-gradient(#1f043d, rgb(56, 128, 56), #1f043d);
+}
+
+.price {
+    color: red;
+}
+
+.btn2 {
+    color: rgb(252, 251, 250);
+    background-image: linear-gradient(to bottom, #d6d6d6 0%, #e083e9 100%);
+    border: 0;
+}
+
+.carimg {
+    width: 300px;
+    height: 250px;
+}
+
+.carimg:hover {
+    width: 500px;
+    height: 400px;
+}
+
+.dep {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.offers {
+    margin-top: 90px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 500px !important;
+}
+
+.title-desc {
+    font-size: 20px;
+    display: block;
+    border-radius: 10px;
+    background: linear-gradient(rgb(234, 245, 241), rgb(52, 52, 247));
+    margin-bottom: 70px;
+    margin: 30px 10px;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+/* Card design */
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+    color: #000000;
+}
+
+.content {
+    width: 25%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(219, 219, 219, 0.25), 0 10px 10px rgba(247, 5, 5, 0.25);
+    transition: .45;
+    background: linear-gradient(#1f0241, #7032b8, rgb(156, 152, 152), rgb(48, 11, 11));
+    margin-bottom: 70px;
+}
+
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, 8px);
+}
+
+.content img {
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.content img:hover {
+    width: 450px;
+    height: 400px;
+}
+
+.content p {
+    text-align: center;
+    color: #000000;
+    padding-top: 0 8px;
+    font-family: 'Poppins', sans-serif;
+    font: bolder;
+}
+
+.content h6 {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(234, 250, 11);
+    font: bolder;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    margin-right: 15px;
+}
+
+li {
+    padding: 4px;
+}
+
+.fa {
+    font-size: 18px;
+    transition: .4s;
+    margin: 0 auto;
+}
+
+.checked {
+    color: rgb(58, 210, 248);
+}
+
+.fa:hover {
+    transform: scale(1.3);
+    transition: 0.6s;
+}
+
+.addtocart {
+    text-align: center;
+    font-size: 22px;
+    color: #1f0241;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: rgb(14, 133, 133);
+}
+
+.addtocart:hover {
+    color: #fff;
+    background-color: rgb(133, 14, 70);
+}
+
+@media(max-width:1000px) {
+    .content {
+        width: 45%;
+    }
+}
+
+@media(max-width:750px) {
+    .content {
+        width: 100%;
+    }
+}
+
+.my-cart {
+    right: 20px;
+    background: linear-gradient(#7643b1, rgb(156, 152, 152));
+    color: #000000;
+    border-radius: 10px;
+    height: 585px;
+    text-align: center;
+}
+
+.my-cart h3 {
+    font-size: 20px;
+}
+
+.my-cart h2 {
+    font-size: 25px;
+
+}
+
+.my-cart span {
+    font-size: 24px;
+    color: #680303;
+}
+
+.btn {
+    color: #ff006a;
+    background-color: #ffffff;
+}
+
+
+/*upcoming product*/
+.up-sec {
+    height: 400px;
+    width: 100px;
+    display: flex;
+    box-sizing: border-box;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
+    background: linear-gradient(to left, rgb(48, 11, 11), #431e6e);
+    box-shadow: 2px 4px 6px rgb(121, 124, 146);
+    border-radius: 15px;
+}
+
+.up-div {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px 15px;
+    background: linear-gradient(#7032b8, rgb(156, 152, 152));
+    border-radius: 20px;
+    align-items: center;
+}
+
+.up-div img {
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px rgb(214, 239, 255);
+}
+
+.up-div img:hover {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.up-div h5 {
+    margin: 7px;
+    text-align: center;
+    color: #0c0169;
+    font-size: 30px;
+    font: bolder;
+}
+
+.up-div p {
+    text-align: center;
+    color: #000000;
+    font: bolder;
+}
+
+/* Customer Review */
+
+.car-tm {
+    padding: 5% 39%;
+    text-align: center;
+}
+
+.jk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    gap: 10px;
+
+}
+
+.rev-img {
+    height: 550px;
+}
+
+.rev-img img {
+    margin-left: 25px;
+    width: 125px;
+    height: 125px;
+    border: 3px solid rgb(10, 2, 2);
+    position: relative;
+    top: 30px;
+    border-radius: 100%;
+}
+
+.r-title h1 {
+    color: #0f98aa;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.r-box {
+    background: linear-gradient(#453b52, rgb(92, 3, 58));
+    width: 255px;
+    height: 300px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(218, 212, 212, 0.15) 0px 1px 6px 8px;
+    align-items: center;
+    text-align: center;
+    color: rgb(190, 190, 190);
+    margin-left: 25px;
+}
+
+.carousel-indicators {
+    bottom: -45px;
+}
+
+
+
+
+/* Contact */
+.cnt {
+    display: flex;
+    margin: 30px;
+}
+
+.btn-icon {
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.btn-icon:hover {
+    background: linear-gradient(#170f42, #4835b4);
+}
+
+
+
+.soc-icon {
+    padding: 10px;
+    text-align: left;
+    margin: 30px;
+}
+
+.fa-brands {
+    font-size: 20px;
+    color: rgb(22, 2, 2);
+}
+
+.fa-solid {
+    font-size: 20px;
+    color: rgb(22, 2, 2);
+}
+
+
+.btn1.btn2 {
+    color: #fff;
+    display: inline-block;
+    background: linear-gradient(#170f42, #4835b4);
+}
+
+.btn1.btn2:hover {
+    background: gray;
+}
+
+.contactbox form {
+    align-items: left;
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: linear-gradient(rgb(90, 31, 31), rgb(165, 87, 87));
+    padding: 10px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+form .btn2 {
+    padding: 10px 50px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(172, 159, 159);
+    text-align: center;
+}
